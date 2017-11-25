@@ -27,6 +27,15 @@ Record::searchAll(['api_user'=>'testapi', 'api_pass'=>'Api@123'])
 ```
 is called
 
+### Related queries for searchAll, searchName and searchId
+```
+
+SELECT * FROM students;
+SELECT * FROM students WHERE MATCH (first, last) AGAINST (:keyword IN NATURAL LANGUAGE MODE);
+SELECT * FROM students WHERE id = :id;
+```
+
+
 Note 
  - Upto 500 records can be fetched in one API hit. When there is huge data in the database, it is better to fetch data in batches with multiple API hits rather than fetching it all at once. However, this value can be adjusted from constants.php
  - The sample data is present in sample-data.json
