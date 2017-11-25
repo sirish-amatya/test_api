@@ -1,13 +1,13 @@
 # Test API - Simple HTTP API implementation
 Sample API implementation to fetch records using php, mysql, docker
 
-# Getting Started
-
 This program is a simple HTTP API service to fetch records from database using PHP, MySql and Docker. It has below mentioned features
 
 1. List all records: http://localhost:8080/search/all/?api_user=testapi&api_pass=Api@123
 2. Get single record by id: http://localhost:8080/search/id/?api_user=testapi&api_pass=Api@123&keyword=5a0e4b8279821d79b0c8ccc2
 3. Get records by name (fulltext search by name): http://localhost:8080/search/name/?api_user=testapi&api_pass=Api@123&keyword=burt+england+moss+kirk
+
+# Getting Started
 
 The controller is present in class/Record.php
 ```
@@ -17,7 +17,7 @@ http://localhost:8080/<func_part1>/<func_part2>/?<get_variables>
 
 For the above structure, the function is called in below mentioned fashion
 ```
-Record::<func_part1>/<func_part2>(<get_variables>) 
+Record::<func_part1><func_part2>(<get_variables>) 
 ```
 Eg. for http://localhost:8080/search/all/?api_user=testapi&api_pass=Api@123
 
