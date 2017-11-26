@@ -83,13 +83,18 @@ define('MAX_BATCH_LENGTH', 500);
 
 ### Steps to execute the program
 
-Step 1: Use the below docker command to make the build and run it
+Step 1: Clone the repository
+```
+git clone https://github.com/sirish-amatya/test_api.git
+cd test_api
+```
+Step 2: Use the below docker command to make the build and run it
 ```
 
 sudo docker-compose build
 sudo docker-compose up -d
 ```
-Step 2: Check the status of the containers using the below mentioned command
+Step 3: Check the status of the containers using the below mentioned command
 ```
 
 sudo docker-compose ps
