@@ -132,4 +132,7 @@ Output
 
 - docker-compose
 - docker
+- ubuntu (xenial)
+
+Ref: https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/
 
